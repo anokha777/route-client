@@ -5,9 +5,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import { getTestData } from './redux/actions/test';
 import { useDispatch, useSelector } from 'react-redux';
-import Header from './components/Header/Header';
+import Navheader from './components/Header/Navheader';
 import ApplicationRouter from './router/ApplicationRouter';
+
 const { Content } = Layout;
+
 function App() {
   const dispatch = useDispatch();
   const testData = useSelector((state)=>state.testReducerData.testData);
@@ -25,7 +27,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+        <Navheader />
         <Content className='route-container'>
           <ApplicationRouter />
         </Content>
