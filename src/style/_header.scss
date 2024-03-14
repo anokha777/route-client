@@ -1,9 +1,11 @@
 
+$colorbg: orange;
+$txcolor: #ffff;
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: grey;
+    // background-color: #000000;
     padding: 6px 20px;
     box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 1.0); 
     margin: 0;
@@ -22,19 +24,17 @@ nav{
 #navbar li .nav-links{
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 400;
-    // color: #fff;
-    color: #ffff;
-    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    color: $txcolor;
 }
 #navbar li .btn-singin-singup{
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 20px;
-    background-color: yellow;
+    background-color: $colorbg;
     color: black;
 }
 #navbar li .nav-links:hover{
-    color: #17cf97;
+    color: #cfcbf7;
 }
 #mobile{
     display: none;
@@ -42,11 +42,44 @@ nav{
 
    .social-icons{
     display: flex;
+    align-items: center;
+    padding: 0 6px;  
     li{
-        margin-left: 6px;
+        margin-left: 10px;
         list-style: none;
+        .social-links{
+            color: $colorbg;
+            font-size: 20px;
+            font-weight: 800;
+        }
     }
    }
+   .social-icons > span{
+    color: $txcolor;
+    font-weight: bold;
+}
+   .top-input{
+    background-color: #150c38;
+    align-items: center;
+   
+   }
+   .top-form{
+    padding: 10px;
+
+    .select-style{
+        margin: 0 4px 0 4px;
+    }
+    .search{
+        background-color: $colorbg;
+        color: black;
+        border: none;
+    }
+   }
+   .top-form > span{
+    font-size: 15px;
+    color: $colorbg;
+    font-weight: bold;
+} 
 
 @media screen and (max-width: 1024px) {
     nav{

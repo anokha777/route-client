@@ -1,5 +1,7 @@
 @import url('./style/test.scss');
 @import url('./style/_header.scss');
+@import url('./components/banner/_banner.scss');
+@import url('./components/cities/_cities.scss');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
